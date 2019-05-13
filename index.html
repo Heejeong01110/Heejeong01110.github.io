@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Album example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+
+
+  <body>
+    <header>
+  
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>강희정</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Cooking recipe</h1>
+      <p class="lead text-muted">안녕하세요 자기소개 페이지입니다.</p>
+      <p>
+
+      <div id="one" >
+  <div class="card-body">
+    <h5 class="card-title">Introduce</h5>
+    <p class="card-text">안녕하십니까 한국산업기술대학교 컴퓨터공학과 강희정입니다. <br>
+      저는 컴퓨터공학과에서 c언어나 파이썬, 자바 언어를 배우며 프로그래밍에 대해 공부하였습니다. <br>
+      대학교에 와서 프로그래밍 언어에 대해 처음 접했는데, 2년 공부를 했지만 아직까지도 프로그래밍 언어를 공부해서 무얼 해야하는건지 잘 알지 못합니다. <br>
+      분명 저의 탓도 있겠지만, 이론이 아닌 제대로 된 앱, 프로그램을 만들고 싶단 생각을 하였습니다. <br>
+      그래서 올해 휴학을 결심하고 혼자서 공부하며 지내고 있습니다. <br>
+      그러던 중 멋쟁이 사자처럼이라는 프로그램을 알게 되었고 컴퓨터공학과이지만 아직 프로그래밍이 낯선 저에게 필요한 활동이라고 생각했습니다. <br>
+      또, 학교 안에서 끝나는게 아니라 다양한 지역에서 같이 하는 활동이라는 게 매력적으로 느껴졌습니다. <br>
+      이 활동으로 저에게 전공에 대한 확신과 많은 인연을 만날 수 있는 기회를 얻을 수 있을거라 생각합니다.<br>
+      </p>
+  </div>
+</div>
+
+<div id="two" >
+  <div class="card-body">
+    <h5 class="card-title">survice</h5>
+    <p class="card-text">저는 요리 레시피 어플을 만들고 싶습니다. <br>
+      학생들이 자취를 하면서 간단히 음식을 만들어 먹을 때, 레시피를 보며 음식을 만들어 먹기에는 필요한 재료가 너무 많습니다. <br>
+      그렇기 때문에 간단한 메인재료를 중심으로 가지고 있는 재료를 입력하면 <br>
+      가지고 있는 재료로 가장 쉽게 만들 수 있는 요리가 무엇인지 알려 주는 서비스가 있었으면 좋겠다고 생각하였습니다. <br>
+      </p>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+</html>
